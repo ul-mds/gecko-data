@@ -1,16 +1,16 @@
 # Given names and gender
 
-- **Sources:** [male given names](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142146/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands)), [female given names](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142514/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands))
+- **Sources:** [Wiktionary's most common male given names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142146/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands)), [Wiktionary's most common female given names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142514/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands))
 
 The lists were concatencated. A "gender" column was added to indicate whether a given name is classified as male or female.
 
 # Last names
 
-- **Sources:** [last names](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142618/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands))
+- **Sources:** [Wiktionary's most common last names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142618/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands))
 
 # Street names
 
-- **Sources:** [street names, municipalities, postcodes](https://www.zeit.de/interactive/strassennamen/index.html) ([archive](https://web.archive.org/web/20240124141150/https://www.zeit.de/interactive/strassennamen/index.html))
+- **Sources:** [Zeit Online interactive street name analysis](https://www.zeit.de/interactive/strassennamen/index.html) ([archive](https://web.archive.org/web/20240124141150/https://www.zeit.de/interactive/strassennamen/index.html))
 
 The GeoJSON file was converted to a CSV file by creating a row for every feature.
 Each feature had its street name, municipality and postcode extracted.
