@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "geco-py3-data"
+version = "0.1.0"
+description = ""
+authors = ["Maximilian Jugl <Maximilian.Jugl@medizin.uni-leipzig.de>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.2.0"
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
