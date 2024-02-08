@@ -1,21 +1,30 @@
 # Given names and gender
 
-- **Sources:** [Wiktionary's most common male given names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142146/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands)), [Wiktionary's most common female given names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142514/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands))
+## Sources 
 
-The lists were concatencated. A "gender" column was added to indicate whether a given name is classified as male or female.
+- [Wiktionary's most common male given names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142146/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_m%C3%A4nnlichen_Vornamen_Deutschlands))
+- [Wiktionary's most common female given names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142514/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_weiblichen_Vornamen_Deutschlands))
+
+## Modifications
+
+- lists were concatenated
+- gender column added depending on whether name is from list of female (`f`) or male (`m`) list
 
 # Last names
 
-- **Sources:** [Wiktionary's most common last names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142618/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands))
+## Sources 
+
+- [Wiktionary's most common last names in Germany](https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands) ([archive](https://web.archive.org/web/20240112142618/https://de.wiktionary.org/wiki/Verzeichnis:Deutsch/Namen/die_h%C3%A4ufigsten_Nachnamen_Deutschlands))
 
 # Street names
 
-- **Sources:** [Zeit Online interactive street name analysis](https://www.zeit.de/interactive/strassennamen/index.html) ([archive](https://web.archive.org/web/20240124141150/https://www.zeit.de/interactive/strassennamen/index.html))
+## Sources
 
-The GeoJSON file was converted to a CSV file by creating a row for every feature.
-Each feature had its street name, municipality and postcode extracted.
-Features where any of these fields were empty were skipped.
+-  [Zeit Online interactive street name analysis](https://www.zeit.de/interactive/strassennamen/index.html) ([archive](https://web.archive.org/web/20240124141150/https://www.zeit.de/interactive/strassennamen/index.html))
 
-The resulting CSV file was filtered by removing street names that have digits in them.
-Only rows with street names that appear more than 22 times (99% quantile) were kept.
-Finally, 5% of all rows were randomly selected for export to trim the size of the final CSV file.
+## Modifications
+
+- GeoJSON features "NAME" (street name), "GEMEINDE" (municipality) and "PLZ" (postcode) extracted and converted into table (empty features were skipped)
+- dropped all street names with digits in them
+- dropped all street names with less than 23 occurrences (<99% quantile)
+- selected 5% of all street names at random
