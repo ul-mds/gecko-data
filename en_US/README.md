@@ -1,6 +1,7 @@
 # Given names, gender and ethnicity
 
 - File name: [given-name-gender-ethnicity.csv](given-name-gender-ethnicity.csv)
+- Notebook: [given-name-gender-ethnicity.ipynb](./_notebooks/given-name-gender-ethnicity.ipynb)
 
 ## Sources
 
@@ -16,6 +17,7 @@
 # Last names
 
 - File name: [last-name.csv](last-name.csv)
+- Notebook: [last-name.ipynb](./_notebooks/last-name.ipynb)
 
 ## Sources
 
