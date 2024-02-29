@@ -11,6 +11,7 @@
 
 - lists were concatenated
 - gender column added depending on whether name is from list of female (`f`) or male (`m`) list
+- removed duplicate "Jonas" entry
 
 # Last names
 
