@@ -1,13 +1,13 @@
-This repository contains example data for use with [Gecko](https://gitlab.com/ul-mds/record-linkage/gecko/gecko) &mdash; a Python library for mass generation and corruption of synthetic data.
+This repository contains example data for use with [Gecko](https://github.com/ul-mds/gecko) &mdash; a Python library for generation and mutation of realistic data at scale.
 All data present in this repository is collected from public data sources.
 Feel free to use it to test Gecko's capabilities.
 
-# Installation
+# Usage
 
 Clone this repository to an easy-to-find location.
 
 ```bash
-git clone https://gitlab.com/ul-mds/record-linkage/gecko/gecko-data
+git clone https://github.com/ul-mds/gecko-data.git
 ```
 
 You can now use the data in this repository in your Gecko scripts.
